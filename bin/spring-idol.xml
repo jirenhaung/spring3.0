@@ -3,24 +3,65 @@
  		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  		xsi:schemaLocation="http://www.springframework.org/schema/beans
   			http://www.springframework.org/schema/beans/spring-beans.xsd">
+  	
   	<bean id="duke" class="com.springinaction.springidol.Juggler">
   		<constructor-arg value="15" />
   	</bean>
+  	
   	<bean id="sonnet29"
   			class="com.springinaction.springidol.Sonnet29">
   	</bean>
+  	
   	<bean id="poeticDuke"
   			class="com.springinaction.springidol.PoeticJuggler">
   		<constructor-arg value="15"/>
   		<constructor-arg ref="sonnet29"/>
   	</bean>
+  	
   	<bean id="saxophone"
   		class="com.springinaction.springidol.Saxophone"	/>
+  	
   	<bean id="piano" 
   		class="com.springinaction.springidol.Piano" />
+	
 	<bean id="kenny2"
 			class="com.springinaction.springidol.Instrumentalist">
 			<property name="song" value="Jingle Bells" />
 			<property name="instrument" ref="piano"/>
-	</bean>  	
+	</bean>
+	
+	<bean id="guitar"
+			class="com.springinaction.springidol.Guitar" />
+			
+	<bean id="cymbal"
+			class="com.springinaction.springidol.Cymbal"/>
+			
+	<bean id="harmonica"
+			class="com.springinaction.springidol.Harmonica"/>				
+	<bean id="hank"
+			class="com.springinaction.springidol.OneManBand">
+		<property name="instruments">
+			<list>
+				<ref bean="guitar"/>
+				<ref bean="cymbal"/>
+				<ref bean="harmonica"/>
+			</list>
+		</property>
+	</bean>  
+	
+	<bean id="hanks" class="com.springinaction.springidol.OneMenBand2">
+		<property name="instruments">
+			<map>
+				<entry key="GUITAR" value-ref="guitar" />
+				<entry key="CYMBAL" value-ref="cymbal" />
+				<entry key="HARMONICA" value-ref="harmonica" />
+			</map>
+		</property>
+	</bean>	
+	
+	<bean id="carl"
+		class="com.springinaction.springidol.Instrumentalist">
+		<property name="song" value="#{kenny2.song.toUpperCase()}" />
+		<property name="instrument" ref="piano"/>
+	</bean>
 </beans>

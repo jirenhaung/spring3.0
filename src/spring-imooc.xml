@@ -7,4 +7,10 @@
 	<bean id="beanScope" class="com.imooc.spring.BeanScope"
 		scope="prototype">
 	</bean>
+	<!-- destroy-method="stop" init-method="start" -->
+	<bean id="beanLifeCycle" class="com.imooc.spring.BeanLifeCycle">
+	</bean>
+	<bean id="moocApplicationContext"
+		class="com.imooc.spring.aware.ImoocApplicationContext">
+	</bean>
 </beans>

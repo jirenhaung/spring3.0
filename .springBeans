@@ -10,6 +10,7 @@
 		<config>src/spring-imooc.xml</config>
 		<config>src/spring-autowiring.xml</config>
 		<config>src/spring-resource.xml</config>
+		<config>src/spring-beanannotation.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

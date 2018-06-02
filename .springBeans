@@ -11,6 +11,7 @@
 		<config>src/spring-autowiring.xml</config>
 		<config>src/spring-resource.xml</config>
 		<config>src/spring-beanannotation.xml</config>
+		<config>src/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

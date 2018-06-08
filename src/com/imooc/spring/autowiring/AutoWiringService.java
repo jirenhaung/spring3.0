@@ -10,7 +10,7 @@ public class AutoWiringService {
 	}
 
 	public void setAutoWiringDAO11(AutoWiringDAO autoWiringDAO) {
-		System.out.println("setAutoWiringDAO");
+		System.out.println("setAutoWiringDAO11");
 		this.autoWiringDAO = autoWiringDAO;
 	}
 	public void say(String word){

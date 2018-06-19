@@ -65,5 +65,9 @@
 	<classpathentry exported="true" kind="lib" path="E:/spring包/spring-framework-5.0.1.RELEASE/libs/spring-websocket-5.0.1.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="E:/spring包/spring-framework-5.0.1.RELEASE/libs/spring-websocket-5.0.1.RELEASE-javadoc.jar"/>
 	<classpathentry exported="true" kind="lib" path="E:/spring包/spring-framework-5.0.1.RELEASE/libs/spring-websocket-5.0.1.RELEASE-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/用户目录/下载/aspectjweaver-1.6.9.jar.zip"/>
+	<classpathentry exported="true" kind="lib" path="D:/用户目录/下载/aspectjweaver-1.8.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/用户目录/下载/aopalliance-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/用户目录/下载/aspectjrt-1.8.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

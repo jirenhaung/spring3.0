@@ -12,6 +12,7 @@
 		<config>src/spring-resource.xml</config>
 		<config>src/spring-beanannotation.xml</config>
 		<config>src/config.xml</config>
+		<config>src/spring-aop-schema-advice.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

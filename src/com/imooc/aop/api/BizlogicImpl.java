@@ -7,6 +7,7 @@ public class BizlogicImpl implements BizLogic {
 		// TODO Auto-generated method stub
 		System.out.println("BizLogicImpl:Logic save");
 		return "BizLogicImpl save";
+		//throw new RuntimeException();
 	}
 
 }
